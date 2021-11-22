@@ -1,8 +1,0 @@
-Sesi01
---> Hello World
-dotnet new console || Membuat file
-dotnet run || Menjalankan
-
---> Hello Mono
-mcs hello.cs || Membuat file exe
-mono hello.exe || menjalankan file exe
