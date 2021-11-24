@@ -1,0 +1,16 @@
+E:\KERJA\OCBC\sesi05\program1\obj\Debug\net5.0\program1.csproj.AssemblyReference.cache
+E:\KERJA\OCBC\sesi05\program1\obj\Debug\net5.0\program1.GeneratedMSBuildEditorConfig.editorconfig
+E:\KERJA\OCBC\sesi05\program1\obj\Debug\net5.0\program1.AssemblyInfoInputs.cache
+E:\KERJA\OCBC\sesi05\program1\obj\Debug\net5.0\program1.AssemblyInfo.cs
+E:\KERJA\OCBC\sesi05\program1\obj\Debug\net5.0\program1.csproj.CoreCompileInputs.cache
+E:\KERJA\OCBC\sesi05\program1\bin\Debug\net5.0\program1.exe
+E:\KERJA\OCBC\sesi05\program1\bin\Debug\net5.0\program1.deps.json
+E:\KERJA\OCBC\sesi05\program1\bin\Debug\net5.0\program1.runtimeconfig.json
+E:\KERJA\OCBC\sesi05\program1\bin\Debug\net5.0\program1.runtimeconfig.dev.json
+E:\KERJA\OCBC\sesi05\program1\bin\Debug\net5.0\program1.dll
+E:\KERJA\OCBC\sesi05\program1\bin\Debug\net5.0\ref\program1.dll
+E:\KERJA\OCBC\sesi05\program1\bin\Debug\net5.0\program1.pdb
+E:\KERJA\OCBC\sesi05\program1\obj\Debug\net5.0\program1.dll
+E:\KERJA\OCBC\sesi05\program1\obj\Debug\net5.0\ref\program1.dll
+E:\KERJA\OCBC\sesi05\program1\obj\Debug\net5.0\program1.pdb
+E:\KERJA\OCBC\sesi05\program1\obj\Debug\net5.0\program1.genruntimeconfig.cache
