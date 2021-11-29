@@ -1,0 +1,18 @@
+
+
+Panduan menjalankan program
+1. jalankan XAMPP kemudian menyalakan service apache dan mysql
+2. kemudian masuk ke (default) http://localhost/phpmyadmin
+3. Kemudian Crate database "movies".
+4. Kemudian pilih tab import lalu masukan file "data_movies.sql"
+5. open folder program menggunakan VSCODE kemudian buka terminal kemudian ketikan "dotnet run".
+
+
+panduan postman
+1. membuat user untuk token
+2. login agar dapat melihat token dan copy token
+3. masukan token dengan cara masuk tab auth kemudian memilih type Bearer token kemudian paste token. kemudian send untuk Get semua data movie
+4. masukan token dengan cara masuk tab auth kemudian memilih type Bearer token kemudian paste token. kemudian ke body isi data kemudian tekan send untuk insert data movie.
+5. masukan token dengan cara masuk tab auth kemudian memilih type Bearer token kemudian paste token. kemudian ke params isi id kemudian tekan send untuk get data movie by id.
+6. masukan token dengan cara masuk tab auth kemudian memilih type Bearer token kemudian paste token. kemudian ke param untuk mengisikan id yang akan di edit. kemudian ke body edit data kemudian tekan send untuk Edit data movie.
+7. masukan token dengan cara masuk tab auth kemudian memilih type Bearer token kemudian paste token. kemudian ke params untuk mengisikan id yang akan di delete. kemudian send untuk delete data movie by id

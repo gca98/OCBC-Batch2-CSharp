@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "49f49128-8cd0-4812-a1b2-13c92df671b2",
+		"name": "Assign3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Gio\",\r\n  \"email\": \"gio@gmail.com\",\r\n  \"password\": \"Gio123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/AuthManagement/Register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"AuthManagement",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Login User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.globals.set(\"variable_key\", \"variable_value\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"gio@gmail.com\",\r\n  \"password\": \"Gio123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/AuthManagement/Login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"AuthManagement",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. Get Movie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFkMWVjMGU0LTIxMjMtNDkyZi1hMzU3LTBkMjIzOTNiMDE5ZiIsImVtYWlsIjoiZ2lvQGdtYWlsLmNvbSIsInN1YiI6Imdpb0BnbWFpbC5jb20iLCJqdGkiOiIzMGY0MWJmNy1kOGEyLTQ4ZGQtOTc2My1kMDRjZWQ4N2ExNDkiLCJuYmYiOjE2MzgwOTU2ODMsImV4cCI6MTYzODExNzI4MywiaWF0IjoxNjM4MDk1NjgzfQ.a8NLrKylKvPYTDVjvgRau_C83Ur-m6BFH_mn9wQPIUs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Movies",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Insert Movie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFkMWVjMGU0LTIxMjMtNDkyZi1hMzU3LTBkMjIzOTNiMDE5ZiIsImVtYWlsIjoiZ2lvQGdtYWlsLmNvbSIsInN1YiI6Imdpb0BnbWFpbC5jb20iLCJqdGkiOiIzMGY0MWJmNy1kOGEyLTQ4ZGQtOTc2My1kMDRjZWQ4N2ExNDkiLCJuYmYiOjE2MzgwOTU2ODMsImV4cCI6MTYzODExNzI4MywiaWF0IjoxNjM4MDk1NjgzfQ.a8NLrKylKvPYTDVjvgRau_C83Ur-m6BFH_mn9wQPIUs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 0,\r\n    \"name\": \"John Wick\",\r\n    \"genre\": \"Action\",\r\n    \"duration\": \"1h 41mins\",\r\n    \"releaseDate\": \"2014-10-24 00:00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Movies",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. Get Movie By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFkMWVjMGU0LTIxMjMtNDkyZi1hMzU3LTBkMjIzOTNiMDE5ZiIsImVtYWlsIjoiZ2lvQGdtYWlsLmNvbSIsInN1YiI6Imdpb0BnbWFpbC5jb20iLCJqdGkiOiIzMGY0MWJmNy1kOGEyLTQ4ZGQtOTc2My1kMDRjZWQ4N2ExNDkiLCJuYmYiOjE2MzgwOTU2ODMsImV4cCI6MTYzODExNzI4MywiaWF0IjoxNjM4MDk1NjgzfQ.a8NLrKylKvPYTDVjvgRau_C83Ur-m6BFH_mn9wQPIUs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Movies/:id",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Movies",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6. Edit Movie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFkMWVjMGU0LTIxMjMtNDkyZi1hMzU3LTBkMjIzOTNiMDE5ZiIsImVtYWlsIjoiZ2lvQGdtYWlsLmNvbSIsInN1YiI6Imdpb0BnbWFpbC5jb20iLCJqdGkiOiIzMGY0MWJmNy1kOGEyLTQ4ZGQtOTc2My1kMDRjZWQ4N2ExNDkiLCJuYmYiOjE2MzgwOTU2ODMsImV4cCI6MTYzODExNzI4MywiaWF0IjoxNjM4MDk1NjgzfQ.a8NLrKylKvPYTDVjvgRau_C83Ur-m6BFH_mn9wQPIUs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"name\": \"Coba\",\r\n    \"genre\": \"Coba\",\r\n    \"duration\": \"Coba\",\r\n    \"releaseDate\": \"Coba\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Movies/:id",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Movies",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7. Delete Movie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFkMWVjMGU0LTIxMjMtNDkyZi1hMzU3LTBkMjIzOTNiMDE5ZiIsImVtYWlsIjoiZ2lvQGdtYWlsLmNvbSIsInN1YiI6Imdpb0BnbWFpbC5jb20iLCJqdGkiOiIzMGY0MWJmNy1kOGEyLTQ4ZGQtOTc2My1kMDRjZWQ4N2ExNDkiLCJuYmYiOjE2MzgwOTU2ODMsImV4cCI6MTYzODExNzI4MywiaWF0IjoxNjM4MDk1NjgzfQ.a8NLrKylKvPYTDVjvgRau_C83Ur-m6BFH_mn9wQPIUs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Movies/:id",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Movies",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
